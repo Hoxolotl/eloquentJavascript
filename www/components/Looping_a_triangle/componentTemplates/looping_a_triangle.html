@@ -1,0 +1,29 @@
+<h2>Looping a triangle</h2>
+<h3>Description</h3>
+<div>
+  Write a loop that makes seven calls to console.log to output the following triangle:
+  <br>
+  #<br>
+  ##<br>
+  ###<br>
+  ####<br>
+  #####<br>
+  ######<br>
+  #######<br>
+  <br>
+</div>
+
+
+<h3>Results</h3>
+<span id="triangle">results go here</span>
+
+<h3>Code</h3>
+<script class="source">
+  let element = document.getElementById("triangle")
+  let hashes = "#" 
+  for (let i = 0; i < 7; i++ ){
+    element = hashes + "<br>"
+    console.log(hashes)
+    hashes += "#"              
+  }
+</script>

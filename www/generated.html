@@ -9,7 +9,17 @@
     <!-- /Component CSS -->
     <!-- Page CSS -->
     <style>
-      
+      /* styles */
+      	.source {
+      		grid-area: right;
+      		display: block;
+      		font-family: monospace;
+      		white-space: pre;
+      		height: 100%;
+      		overflow: auto;
+      		background-color: #0F0F0F;
+      		color: #FEFEFE;
+      	}
     </style>
     <!-- /Page CSS -->
     <!-- Head HTML -->
@@ -66,12 +76,43 @@
     
     <!-- /Body HTML -->
     <!-- Component HTML templates -->
+    <template id="looping_a_triangle">
+      <h2>Looping a triangle</h2>
+    <h3>Description</h3>
+    <div>
+      Write a loop that makes seven calls to console.log to output the following triangle:
+      <br>
+      #<br>
+      ##<br>
+      ###<br>
+      ####<br>
+      #####<br>
+      ######<br>
+      #######<br>
+      <br>
+    </div>
     
+    
+    <h3>Results</h3>
+    <span id="triangle">results go here</span>
+    
+    <h3>Code</h3>
+    <script class="source">
+      let element = document.getElementById("triangle")
+      let hashes = "#" 
+      for (let i = 0; i < 7; i++ ){
+        element = hashes + "<br>"
+        console.log(hashes)
+        hashes += "#"              
+      }
+    </script>
+    </template>
     <!-- /Component HTML templates -->
     <div class="main" data-simply-field="page" data-simply-content="template">
     <!-- Page HTML templates -->
     <template data-simply-template="Main">
       <h1>Eleoquent Javascript Excercises</h1>
+    <simply-render rel="looping_a_triangle"></simply-render>
     </template>
     <!-- /Page HTML templates -->
     </div>

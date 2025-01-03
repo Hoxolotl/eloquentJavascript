@@ -1,0 +1,10 @@
+	.source {
+		grid-area: right;
+		display: block;
+		font-family: monospace;
+		white-space: pre;
+		height: 100%;
+		overflow: auto;
+		background-color: #0F0F0F;
+		color: #FEFEFE;
+	}
